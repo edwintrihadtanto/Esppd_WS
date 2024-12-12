@@ -1,0 +1,15 @@
+INFO - 2024-07-02 03:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 03:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-02 11:06:28 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Bridging.php on line 620.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->ApprovAuto()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 11:08:20 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Bridging.php on line 620.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->ApprovAuto()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

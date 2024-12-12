@@ -1,0 +1,64 @@
+INFO - 2024-08-20 06:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 06:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 06:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 06:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 07:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 07:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 07:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 07:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-20 07:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-20 07:30:55 --> Undefined property: stdClass::$exp
+in APPPATH\Controllers\Apotek.php on line 3108.
+ 1 APPPATH\Controllers\Apotek.php(3108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$exp', 'APPPATH\\Controllers\\Apotek.php', 3108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-20 07:30:55 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined property: stdClass::$exp
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Apotek.php(3108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3108)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD()
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-20 07:31:05 --> Undefined property: stdClass::$exp
+in APPPATH\Controllers\Apotek.php on line 3108.
+ 1 APPPATH\Controllers\Apotek.php(3108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$exp', 'APPPATH\\Controllers\\Apotek.php', 3108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-20 07:31:05 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined property: stdClass::$exp
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Apotek.php(3108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3108)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD()
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-08-20 08:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,196 @@
+INFO - 2024-07-03 03:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-03 04:12:39 --> Unclosed '{' on line 3624 does not match ')'
+in APPPATH\Controllers\Laporan.php on line 4123.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Laporan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Laporan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Laporan')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Laporan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 04:32:59 --> Invalid file: "view/lapoperasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view/lapoperasi.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view/lapoperasi', [], true)
+ 3 APPPATH\Controllers\Laporan.php(3625): view('view/lapoperasi')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 04:33:48 --> Invalid file: "view/lapoperasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view/lapoperasi.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view/lapoperasi', [], true)
+ 3 APPPATH\Controllers\Laporan.php(3625): view('view/lapoperasi')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:04:46 --> Invalid file: "view/lapoperasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view/lapoperasi.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view/lapoperasi', [], true)
+ 3 APPPATH\Controllers\Laporan.php(3625): view('view/lapoperasi')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:05:03 --> Invalid file: "view/lapoperasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view/lapoperasi.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view/lapoperasi', [], true)
+ 3 APPPATH\Controllers\Laporan.php(3625): view('view/lapoperasi')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:05:46 --> Call to undefined function format_angka()
+in APPPATH\Views\lapoperasi.php on line 58.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3625): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:07:31 --> Call to undefined function tanggal_indo()
+in APPPATH\Views\lapoperasi.php on line 95.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3625): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:07:45 --> Failed opening required '../do_printsjs/html2pdf/html2pdf.class.php' (include_path='C:\xampp\php\PEAR')
+in APPPATH\Views\lapoperasi.php on line 223.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3625): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:09:07 --> Class "HTML2PDF" not found
+in APPPATH\Views\lapoperasi.php on line 224.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3625): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:33:39 --> Class "Mpdf" not found
+in APPPATH\Views\lapoperasi.php on line 224.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3625): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:34:49 --> Undefined variable $html
+in APPPATH\Controllers\Laporan.php on line 3643.
+ 1 APPPATH\Controllers\Laporan.php(3643): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'APPPATH\\Controllers\\Laporan.php', 3643)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:35:18 --> view(): Argument #2 ($data) must be of type array, Mpdf\Mpdf given, called in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Laporan.php on line 3646
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Laporan.php(3646): view('lapoperasi', Object(Mpdf\Mpdf))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:36:46 --> Failed opening required '../vendor/mpdf/' (include_path='C:\xampp\php\PEAR')
+in APPPATH\Views\lapoperasi.php on line 223.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3626): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:37:01 --> Failed opening required '../../vendor/mpdf/' (include_path='C:\xampp\php\PEAR')
+in APPPATH\Views\lapoperasi.php on line 223.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3626): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:37:14 --> Failed opening required '../../../vendor/mpdf/' (include_path='C:\xampp\php\PEAR')
+in APPPATH\Views\lapoperasi.php on line 223.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3626): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 06:59:06 --> Failed opening required '../../../vendor/mpdf/' (include_path='C:\xampp\php\PEAR')
+in APPPATH\Views\lapoperasi.php on line 223.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3626): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 07:00:40 --> Failed opening required '../html2pdf/html2pdf.class.php' (include_path='C:\xampp\php\PEAR')
+in APPPATH\Views\lapoperasi.php on line 223.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('lapoperasi', [], true)
+ 4 APPPATH\Controllers\Laporan.php(3626): view('lapoperasi')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->laporanoperasi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 07:01:07 --> Array and string offset access syntax with curly braces is no longer supported
+in FCPATH\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 2005.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-03 07:19:07 --> Array and string offset access syntax with curly braces is no longer supported
+in FCPATH\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 2005.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-03 07:20:39 --> Array and string offset access syntax with curly braces is no longer supported
+in FCPATH\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 2005.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-03 07:20:51 --> Array and string offset access syntax with curly braces is no longer supported
+in FCPATH\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 2005.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-03 07:20:59 --> Array and string offset access syntax with curly braces is no longer supported
+in FCPATH\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 2005.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-03 07:22:17 --> Array and string offset access syntax with curly braces is no longer supported
+in FCPATH\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 5580.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-03 07:43:18 --> syntax error, unexpected identifier "text"
+in APPPATH\Controllers\Laporan.php on line 3648.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Laporan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Laporan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Laporan')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Laporan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-03 07:43:37 --> syntax error, unexpected integer "0"
+in APPPATH\Controllers\Laporan.php on line 3658.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Laporan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Laporan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Laporan')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Laporan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

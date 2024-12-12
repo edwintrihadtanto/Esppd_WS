@@ -1,0 +1,184 @@
+INFO - 2024-06-11 00:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 00:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 00:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-11 00:40:24 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: &quot;&quot;
+LINE 1: ...in, harga,tgl_berlaku,id_unit) VALUES ('133','17','0','','')
+                                                                 ^ in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(431): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-11 00:42:10 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=() is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(431): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2024-06-11 02:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 02:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-11 02:01:59 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=() is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(431): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-11 02:02:54 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=() is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(431): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-11 02:30:45 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=() is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(437): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2024-06-11 02:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-11 02:36:35 --> syntax error, unexpected token "{"
+in APPPATH\Controllers\Setup.php on line 430.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Setup.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Setup')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Setup')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Setup', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 02:36:35 --> syntax error, unexpected token "{"
+in APPPATH\Controllers\Setup.php on line 430.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Setup.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Setup')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Setup')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Setup', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 02:36:35 --> syntax error, unexpected token "{"
+in APPPATH\Controllers\Setup.php on line 430.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Setup.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Setup')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Setup')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Setup', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 02:36:36 --> syntax error, unexpected token "{"
+in APPPATH\Controllers\Setup.php on line 430.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Setup.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Setup')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Setup')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Setup', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 02:37:44 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 1: ...a,tgl_berlaku,id_unit) VALUES ('133','17','0','2024-06-11',)
+                                                                      ^ in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(437): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2024-06-11 02:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-11 02:41:11 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=() is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(437): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-11 02:43:14 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=(0) is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(437): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-11 02:43:22 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;tarif&quot; violates foreign key constraint &quot;tarif_unit&quot;
+DETAIL:  Key (id_unit)=(0) is not present in table &quot;unit&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(437): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2024-06-11 02:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-11 02:51:28 --> ErrorException: pg_query(): Query failed: ERROR:  INSERT has more target columns than expressions
+LINE 1: ... tarif (id_produk, id_penjamin, harga,tgl_berlaku,id_unit) V...
+                                                             ^ in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO tar...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO tar...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tar...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(436): CodeIgniter\Database\BaseConnection->query('INSERT INTO tar...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->tarifproduk_addeditTarifProduk()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-11 03:13:22 --> Undefined property: stdClass::$id_detail_transaksi
+in APPPATH\Controllers\Kasirgeneral.php on line 4812.
+ 1 APPPATH\Controllers\Kasirgeneral.php(4812): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_detail_transaksi', 'APPPATH\\Controllers\\Kasirgeneral.php', 4812)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasirgeneral->cetakbill()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasirgeneral))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

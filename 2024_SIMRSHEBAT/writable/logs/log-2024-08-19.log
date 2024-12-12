@@ -1,0 +1,43 @@
+INFO - 2024-08-19 04:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-19 04:08:50 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 1: ...','Ampul', '10', 'Obat Dalam', 't', 'f', 'f', '', '', '', ''...
+                                                             ^ in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'INSERT INTO far...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO far...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO far...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(802): CodeIgniter\Database\BaseConnection->query('INSERT INTO far...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->masterobat_addeditObat()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-08-19 04:09:54 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 17:                                 maxqty = '',
+                                                  ^ in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, ' UPDATE far_oba...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute(' UPDATE far_oba...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery(' UPDATE far_oba...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(784): CodeIgniter\Database\BaseConnection->query(' UPDATE far_oba...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->masterobat_addeditObat()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-08-19 04:11:15 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;far_obat&quot; violates foreign key constraint &quot;tarif_obat_kd_obat_fkey&quot; on table &quot;tarif_obat&quot;
+DETAIL:  Key (kd_obat)=(5612) is still referenced from table &quot;tarif_obat&quot;. in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, ' DELETE FROM fa...')
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute(' DELETE FROM fa...')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM fa...')
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Setup.php(838): CodeIgniter\Database\BaseConnection->query(' DELETE FROM fa...')
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Setup->masterobat_HapusObat()
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2024-08-19 05:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

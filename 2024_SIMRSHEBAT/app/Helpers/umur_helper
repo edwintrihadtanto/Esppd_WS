@@ -1,0 +1,15 @@
+<?php
+    if ( ! function_exists('umur'))
+    {
+        function umur($tgl_lahir) {
+            $lahir  = new DateTime($tgl_lahir);
+            $today  = new DateTime();
+            $umur   = $today->diff($lahir);
+            $thn    = $umur->y;
+            $bln    = $umur->m;
+            $hr     = $umur->d;
+            return $thn + " Thn "+ $bln + " Bln "+ $hr + " Hri";
+        }
+
+    }
+?>

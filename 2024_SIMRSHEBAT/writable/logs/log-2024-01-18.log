@@ -1,0 +1,121 @@
+INFO - 2024-01-18 01:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 03:19:17 --> Call to undefined function App\Controllers\getMargin_denganunit()
+in APPPATH\Controllers\Apotek.php on line 2584.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD_Live()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 03:19:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to undefined function App\Controllers\getMargin_denganunit()
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD_Live()
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-18 03:21:46 --> Call to undefined function App\Controllers\getMargin_denganunit()
+in APPPATH\Controllers\Apotek.php on line 2584.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD_Live()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 03:21:46 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to undefined function App\Controllers\getMargin_denganunit()
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD_Live()
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-18 03:31:27 --> Undefined variable $get_margin
+in APPPATH\Controllers\Apotek.php on line 114.
+ 1 APPPATH\Controllers\Apotek.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $get_margin', 'APPPATH\\Controllers\\Apotek.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->pencarianobat()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 03:31:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined variable $get_margin
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Apotek.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 114)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Apotek->pencarianobat()
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-18 03:35:00 --> Undefined property: stdClass::$exp
+in APPPATH\Controllers\Apotek.php on line 3040.
+ 1 APPPATH\Controllers\Apotek.php(3040): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$exp', 'APPPATH\\Controllers\\Apotek.php', 3040)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 03:35:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined property: stdClass::$exp
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Apotek.php(3040): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3040)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Apotek->CreateResepRJRIIGD()
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-18 06:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 07:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 07:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 07:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 07:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 07:35:36 --> Undefined property: stdClass::$id_kunj
+in APPPATH\Views\view\modal\apotek\resepRJIGDRI_telaahresep.php on line 4.
+ 1 APPPATH\Views\view\modal\apotek\resepRJIGDRI_telaahresep.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_kunj', 'APPPATH\\Views\\view\\modal\\apotek\\resepRJIGDRI_telaahresep.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view\\modal\\apotek\\resepRJIGDRI_telaahresep.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view/modal/apotek/resepRJIGDRI_telaahresep', [], true)
+ 5 APPPATH\Controllers\Apotek.php(102): view('view/modal/apotek/resepRJIGDRI_telaahresep')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apotek->telaah_ResepObat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apotek))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,253 @@
+INFO - 2024-07-19 06:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-19 13:45:27 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev//monitoring/HistoriPelayanan/NoKartu/0002069944571/tglMulai/2024-05-19/tglAkhir/2024-07-19): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev//monitoring/HistoriPelayanan/NoKartu/0002069944571/tglMulai/2024-05-19/tglAkhir/2024-07-19): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev//monitoring/HistoriPelayanan/NoKartu/0002069944571/tglMulai/2024-05-19/tglAkhir/2024-07-19', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(162): App\Controllers\Bridging->url('/monitoring/HistoriPelayanan/NoKartu/0002069944571/tglMulai/2024-05-19/tglAkhir/2024-07-19', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721371496')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->CariSep()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:45:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev//monitoring/HistoriPelayanan/NoKartu/0002069944571/tglMulai/2024-05-19/tglAkhir/2024-07-19): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Bridging.php(40): file_get_contents('https://apijkn-...', true, Resource id #137)
+#2 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\app\Controllers\Bridging.php(162): App\Controllers\Bridging->url('/monitoring/His...', '', 'GET', '1721371496')
+#3 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(934): App\Controllers\Bridging->CariSep()
+#4 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+#5 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\clone\DartoMakanYuyu\cross_ci3\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-19 13:47:02 --> Attempt to read property "noka" on null
+in APPPATH\Controllers\Bridging.php on line 160.
+ 1 APPPATH\Controllers\Bridging.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "noka" on null', 'APPPATH\\Controllers\\Bridging.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->CariSep()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:47:13 --> Attempt to read property "noka" on null
+in APPPATH\Controllers\Bridging.php on line 160.
+ 1 APPPATH\Controllers\Bridging.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "noka" on null', 'APPPATH\\Controllers\\Bridging.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->CariSep('0002069944571')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:47:23 --> Attempt to read property "noka" on null
+in APPPATH\Controllers\Bridging.php on line 160.
+ 1 APPPATH\Controllers\Bridging.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "noka" on null', 'APPPATH\\Controllers\\Bridging.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->CariSep('0002069944571')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:48:17 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721371667')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:50:37 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721371807')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:50:44 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721371814')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:51:19 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721371849')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:51:30 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721371860')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-19 06:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-19 13:54:13 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721372022')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 13:59:27 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721372337')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:01:28 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721372477')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:04:28 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721372638')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:04:46 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721372656')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:07:26 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721372815')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:14:15 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721373225')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:14:39 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721373249')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:17:32 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721373422')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:19:46 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721373556')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:28:44 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721374094')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:31:12 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721374242')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-19 14:54:17 --> file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+
+in APPPATH\Controllers\Bridging.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12): Failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+', 'APPPATH\\Controllers\\Bridging.php', 40)
+ 2 APPPATH\Controllers\Bridging.php(40): file_get_contents('https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/Peserta/nik/3519144609600001/tglSEP/2020-01-12', true, resource (stream-context))
+ 3 APPPATH\Controllers\Bridging.php(53): App\Controllers\Bridging->url('Peserta/nik/3519144609600001/tglSEP/2020-01-12', 'C:\\xampp\\htdocs\\clone\\DartoMakanYuyu\\cross_ci3', 'GET', '1721375627')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bridging->cekNik()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bridging))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

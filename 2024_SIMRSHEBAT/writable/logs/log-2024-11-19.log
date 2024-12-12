@@ -1,0 +1,272 @@
+INFO - 2024-11-19 07:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  function left(integer, integer) does not exist
+LINE 1: SELECT * from produk WHERE left(kd_produk,2)='CT' 
+                                   ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts. in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT * from p...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * from p...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Lab.php(465): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;jenis_pegawai&quot; does not exist
+LINE 1: SELECT * FROM pegawai where jenis_pegawai='1'
+                                    ^ in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #136, 'SELECT * FROM p...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * FROM p...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Rawatjalan.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Rawatjalan->pegawai()
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rawatjalan))
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_jenis_produk&quot; does not exist
+LINE 1: SELECT * from produk WHERE id_jenis_produk='3' 
+                                   ^ in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT * from p...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * from p...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Lab.php(447): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produk()
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  function left(integer, integer) does not exist
+LINE 1: SELECT * from produk WHERE left(kd_produk,2)='XR' 
+                                   ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts. in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT * from p...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * from p...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Lab.php(465): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-19 11:27:59 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\Lab.php on line 465.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-19 11:27:59 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\Rawatjalan.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rawatjalan->pegawai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rawatjalan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-19 11:27:59 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\Lab.php on line 447.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Lab->produk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-19 11:27:59 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\Lab.php on line 465.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-19 11:27:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-19 11:27:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produk()
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-19 11:27:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-19 11:27:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Rawatjalan->pegawai()
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rawatjalan))
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_penyakit&quot; specified in USING clause does not exist in left table in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT    id_pe...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT    id_pe...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Rekammedisirja.php(453): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT    id_pe...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Rekammedisirja->datamrpenyakitirja()
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekammedisirja))
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_kunjungan&quot; does not exist
+LINE 2: ...mr_tindakan inner join icd_9 USING(kd_icd9) where id_kunjung...
+                                                             ^ in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT    kd_ic...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT    kd_ic...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Rekammedisirja.php(411): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT    kd_ic...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Rekammedisirja->datamricd9irja()
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekammedisirja))
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  function left(integer, integer) does not exist
+LINE 1: SELECT * from produk WHERE left(kd_produk,2)='UR' 
+                                   ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts. in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT * from p...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * from p...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Lab.php(465): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-19 11:27:59 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\Lab.php on line 465.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-19 11:27:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Lab->produkRad()
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lab))
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;order_lab&quot; does not exist
+LINE 2:         order_lab o inner join
+                ^ in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT * FROM\r\n...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * FROM\r\n...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Rekammedisirna.php(878): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM\r\n...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Rekammedisirna->datapenunjangpasienirna()
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekammedisirna))
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_penyakit&quot; specified in USING clause does not exist in left table in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT id_penya...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_penya...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Kunjungan.php(585): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_penya...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Kunjungan->historipenyakit()
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kunjungan))
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_penyakit&quot; specified in USING clause does not exist in left table in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT penyakit...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT penyakit...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Kunjungan.php(617): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT penyakit...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Kunjungan->historipenyakitkeluarga()
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kunjungan))
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-11-19 11:27:59 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;alergi&quot; does not exist
+LINE 1: SELECT * from alergi where no_rm='6-90-78-37' 
+                      ^ in C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\Postgre\Connection.php(147): pg_query(Resource id #137, 'SELECT * from a...')
+#2 C:\xampp\htdocs\2024_SIMRSHEBAT\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT * from a...')
+#3 C:\xampp\htdocs\2024_SIMRSHEBAT\app\Controllers\Kunjungan.php(632): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from a...')
+#4 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(934): App\Controllers\Kunjungan->historialergi()
+#5 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kunjungan))
+#6 C:\xampp\htdocs\2024_SIMRSHEBAT\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\2024_SIMRSHEBAT\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+INFO - 2024-11-19 12:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
